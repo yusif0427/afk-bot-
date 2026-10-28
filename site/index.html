@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AFK Bot | Minecraft</title>
+<meta name="description" content="Minecraft AFK bot projesi ve bağlantı durumu sayfası.">
+<style>
+:root{color-scheme:dark;--bg:#090b10;--panel:#121722;--line:#252d3b;--text:#f2f5fb;--muted:#9aa6b8;--green:#65e6a3;--purple:#a78bfa}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at top,#1a2032 0,#090b10 55%);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif;display:grid;place-items:center;padding:24px}
+main{width:min(760px,100%)}.tag{display:inline-flex;gap:8px;align-items:center;border:1px solid #28583f;color:var(--green);background:#102319;border-radius:999px;padding:5px 12px;font-size:13px}.dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 12px var(--green)}
+h1{font-size:clamp(38px,8vw,64px);line-height:1.05;letter-spacing:-2px;margin:20px 0 14px}h1 span{color:var(--purple)}p{color:var(--muted)}.panel{margin-top:28px;background:#121722d9;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 20px 70px #0005}.label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:1.5px}.server{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:8px;font-weight:700;font-size:clamp(16px,4vw,22px)}button,a.btn{font:inherit;cursor:pointer;color:var(--text);background:#25203c;border:1px solid #4b3d77;padding:10px 15px;border-radius:10px;text-decoration:none}button:hover,a.btn:hover{background:#332850}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-top:16px}.mini{border:1px solid var(--line);border-radius:14px;padding:16px;background:#0d111a}.mini strong{display:block;margin-bottom:4px}.mini p{margin:0;font-size:14px}.notice{font-size:13px;margin-top:20px}footer{color:#687386;font-size:12px;margin-top:22px}
+</style>
+</head>
+<body><main>
+<div class="tag"><span class="dot"></span> PROJE SAYFASI</div>
+<h1>AFK <span>BOT</span></h1>
+<p>Minecraft için bot projesinin tanıtım ve durum sayfası.</p>
+<section class="panel">
+<div class="label">Minecraft sunucusu</div>
+<div class="server"><span id="host">oyna.aesirmc.com</span><button id="copy">IP'yi kopyala</button></div>
+<div class="grid">
+<div class="mini"><strong>Proje durumu</strong><p>GitHub kod deposu hazır.</p></div>
+<div class="mini"><strong>Bot bağlantısı</strong><p>Henüz doğrulanmadı; bu sayfa botun çevrimiçi olduğunu göstermez.</p></div>
+</div>
+<p class="notice">Botu çalıştırmak için ayrıca bir hosting servisi ve gerekli ortam değişkenleri gerekir. Sunucu kurallarını kontrol et; botlara izin verilmeyebilir.</p>
+<a class="btn" href="https://github.com/yusif0427/afk-bot-" target="_blank" rel="noopener">GitHub deposu ↗</a>
+</section>
+<footer>AFK Bot • GitHub Pages ile yayınlanır</footer>
+</main>
+<script>document.getElementById('copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText('oyna.aesirmc.com');document.getElementById('copy').textContent='Kopyalandı ✓'}catch(e){document.getElementById('copy').textContent='oyna.aesirmc.com'}});</script>
+</body></html>
